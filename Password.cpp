@@ -107,7 +107,7 @@ bool Password::has_mixed_case(string str)
     if( !found && c >= 'A' && c <= 'Z' ){
       found = true;
     }
-    else if( found && c >= 'a' && c <= 'z'){
+    if( found && c >= 'a' && c <= 'z'){
       return true;
     }
   }
